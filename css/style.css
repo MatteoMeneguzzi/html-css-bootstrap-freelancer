@@ -4,6 +4,10 @@
 	background: hsl(211deg 30% 25%);
 }
 
+.bg-blue {
+	background: hsl(209deg 31% 33%);
+}
+
 .bg-white {
 	background: hsl(0deg 0% 100%);
 }
@@ -17,10 +21,21 @@
 }
 
 /* header */
+
 header {
-	height: 50px;
+	padding: 20px 0;
 }
-/* hero */
-.hero {
-	height: 500px;
+
+/* section */
+section {
+	padding: 20px 0;
+}
+
+/* box */
+
+.box {
+	height: 200px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-radius: 10px;
 }
