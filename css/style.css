@@ -1,0 +1,26 @@
+/* colors */
+
+.bg-dark-blue {
+	background: hsl(211deg 30% 25%);
+}
+
+.bg-white {
+	background: hsl(0deg 0% 100%);
+}
+
+.bg-green {
+	background: hsl(165deg 49% 49%);
+}
+
+.white-color {
+	color: hsl(0deg 0% 100%);
+}
+
+/* header */
+header {
+	height: 50px;
+}
+/* hero */
+.hero {
+	height: 500px;
+}
