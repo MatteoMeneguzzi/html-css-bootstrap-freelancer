@@ -1,3 +1,10 @@
+/* SCROLL */
+
+html {
+	scroll-behavior: smooth;
+	transition: ease-in 0.5s;
+}
+
 /* COLORS */
 
 .bg-dark-blue {
@@ -74,6 +81,12 @@ header nav.navbar-default {
 	font-size: 20px;
 }
 
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+	background: hsl(211deg 30% 25%);
+	color: #fff;
+}
+
 .h-80 {
 	height: 100px;
 	line-height: 100px;
@@ -88,6 +101,15 @@ header nav.navbar-default {
 	line-height: 20px;
 }
 
+.navbar-default .navbar-nav > li > a {
+	transition: all 0.175s;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a.active {
+	color: #fff;
+	background: hsl(211.8, 29.8%, 33.5%);
+}
 /* Hamburger MENU */
 .navbar-toggle {
 	position: relative;
@@ -103,7 +125,7 @@ header nav.navbar-default {
 	transform: translateY(25px);
 }
 
-/* hero */
+/* HERO */
 section.hero {
 	padding: 110px 0 40px;
 	text-transform: uppercase;
@@ -262,6 +284,13 @@ section.info p a {
 	color: hsl(165deg 49% 49%);
 }
 
+/* COPY */
+
+section.copy {
+	padding: 30px 0 30px;
+	text-align: center;
+}
+
 /***** MEDIA QUERY ******/
 
 @media screen and (min-width: 768px) {
@@ -366,11 +395,6 @@ section.info p a {
 	}
 
 	/* COPY */
-
-	section.copy {
-		padding: 30px 0 30px;
-		text-align: center;
-	}
 }
 
 /****** MEDIA QUERY MIN-992px */
