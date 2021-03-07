@@ -176,19 +176,52 @@ section.portfolio {
 }
 
 .portfolio img {
+	position: relative;
 	max-width: 100%;
 	height: auto;
 	border-radius: 10px;
 	margin-top: 20px;
 	margin-bottom: 10px;
 }
-/* box */
+/* LAYOVER */
 
-.box {
-	margin-top: 15px;
-	margin-bottom: 15px;
+.layover {
+	position: absolute;
+	top: 0;
+	left: 15px;
+	bottom: 0;
+	right: 15px;
+	background: rgba(64, 186, 156, 0);
+	max-width: 100%;
+	height: auto;
 	border-radius: 10px;
-	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	transition: background 0.3s;
+	overflow: hidden;
+}
+
+.fa-plus {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 200%);
+	font-size: 100px;
+	color: rgba(255, 255, 255, 0);
+	transition: color 0.3s, transform 0.3s;
+
+	z-index: 1;
+}
+
+.layover:hover {
+	background: rgba(64, 186, 156, 0.5);
+}
+
+.layover:hover .fa-plus {
+	opacity: 1;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+	color: rgba(255, 255, 255, 1);
 }
 
 /*** ABOUT */
@@ -242,7 +275,16 @@ section.contact form textarea {
 }
 
 .contact .btn-bs {
+	background: rgba(64, 186, 156, 1);
 	border: 1px solid transparent;
+}
+
+.btn-bs:hover,
+.btn-bs:active,
+.btn-bs:focus {
+	background: rgb(35, 109, 88, 0.5);
+	border: 1px solid white;
+	color: white;
 }
 
 /* INFO */
